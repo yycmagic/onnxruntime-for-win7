@@ -3,3 +3,8 @@
 /RelWithDebInfo
 /Debug64
 /Release64
+/fns_candy_style_transfer.vcxproj.user
+/.vs
+/Debug
+/Release
+/x64

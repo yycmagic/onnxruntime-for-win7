@@ -14,9 +14,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Header Files">
       <UniqueIdentifier>{695699E8-E052-31A2-BBCE-FF2059C6D20C}</UniqueIdentifier>
     </Filter>

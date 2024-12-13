@@ -1,3 +1,0 @@
-[submodule "onnxruntime-win-1.20.0/demo/wil"]
-	path = onnxruntime-win-1.20.0/demo/wil
-	url = git@github.com:microsoft/wil.git
