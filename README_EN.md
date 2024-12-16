@@ -3,6 +3,10 @@
 [中文](README.md)
 [English](README_EN.md)
 
+**Supporting ONNX Runtime on Windows 7**
+The project involves AI-related components and relies on ONNX Runtime. After downloading a precompiled version from the official website, it ran successfully during testing.
+However, during actual deployment, it was found that Windows 7 was not supported, with errors indicating missing `api-ms-core-...` DLLs. As a result, I had to modify ONNX Runtime manually.
+
 
 ## Overview
 
@@ -39,9 +43,9 @@ The runtime environment has been modified based on these two versions to include
 > **"Windows builds are not compatible with Windows 8.x in this release. Please use v1.11 for now."**
 > Great news! Dependency Walker analysis of `onnxruntime.dll v1.11.1` shows no dependency on `api-ms-win-core-heap-l2-1-0.dll` .
 
-Solution:
+**Solution:**
 You can implement the required support for **Windows 7** yourself. Detailed instructions are available here:
-<https://github.com/yycmagic/onnxruntime-for-win7>
+**<https://github.com/yycmagic/onnxruntime-for-win7>**
 
 **Reference:**
 - **Avoid using LocalFree on FormatMessageW buffer #10796**

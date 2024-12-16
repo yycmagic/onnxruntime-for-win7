@@ -3,6 +3,10 @@
 [中文](README.md)
 [English](README_EN.md)
 
+**支持 win7 系统的 onnxruntime**
+项目用到了 AI 相关的东西，依赖于 onnxruntime，在官网下载了编译好的版本，成功跑通。
+实际部署后发现不支持 win7，提示缺失各种 api-ms-core-… 之类的 dll，于是只能自行魔改 onnxruntime。
+
 
 ## 简述
 
@@ -44,7 +48,6 @@ Modified based on these two versions, including the complete runtime environment
 > **"Windows builds are not compatible with Windows 8.x in this release. Please use v1.11 for now."**
 > great news, I looked dependency walker with onnxruntime.dll `v1.11.1` , it seems it doesn't depends on `api-ms-win-core-heap-l2-1-0.dll` .
 
-<https://github.com/microsoft/onnxruntime/pull/10796>
 **You can implement it yourself to support Windows 7. The issue is resolved here:**
 **可以自己实现，以支持 win7，这里解决了：<https://github.com/yycmagic/onnxruntime-for-win7>**
 
